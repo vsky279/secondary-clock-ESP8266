@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Nastavení podružných hodin</title>
+	<style type=text/css>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		html,
+		body {
+			height: 100%;
+			font-family: sans-serif;
+			text-align: center;
+			background: #444d44;
+		}
+		
+		#content {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 320px;
+			height: 480px;
+			margin: auto;
+		}
+		
+		input {
+			-webkit-appearance: none;
+			border-radius: 0;
+		}
+		
+		fieldset {
+			border: 0;
+			box-shadow: 0 0 15px 1px rgba(0, 0, 0, .4);
+			box-sizing: border-box;
+			padding: 20px 30px;
+			background: #fff;
+			min-height: 320px;
+			margin: -1px;
+		}
+		
+		input {
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+			width: 100%;
+			box-sizing: border-box;
+			color: #222;
+			font: 16px monospace;
+			padding: 15px;
+		}
+		
+		select {
+			font: 16px monospace;
+			background-color: transparent;
+			padding: 15px;
+		}
+		
+		.button {
+			color: #fff;
+			border: 0;
+			border-radius: 3px;
+			cursor: pointer;
+			display: block;
+			font: 16px sans-serif;
+			text-decoration: none;
+			padding: 10px 5px;
+			background: #31b457;
+			width: 100%;
+		}
+		
+		.button:focus,
+		.button:hover {
+			box-shadow: 0 0 0 2px #fff, 0 0 0 3px #31b457;
+		}
+
+		h3 {
+			font-size: 19px;
+			color: #666;
+			margin-bottom: 20px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id=content>
+		<fieldset>
+            <h3>Nastavení podružných hodin IPJ0612</h3>
+            <img src="IPJ_0612.png"><br><br><br><br>
+            <form src="/" method="get" id="form1">
+            Hodiny ukazují<br>
+            <input type=time name=time  value="$TIME">
+            <br>
+            <input type="submit" class='button' value="Seřídit"/>
+            </form>
+		</fieldset>
+	</div>
+</body>
+
+</html>
