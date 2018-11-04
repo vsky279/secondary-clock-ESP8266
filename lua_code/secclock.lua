@@ -62,7 +62,7 @@ end
 
 local cronent
 function timeSync()
-    n:syncdns(function ()
+    n:sync(function ()
       if not display then display = ((n:time() % 86400) / 60) * 60 end
       if not cronent then cronent = cron.schedule("* * * * *", adjust) end
       return tmr_alarm(tmr_sync, 90*60*1000, tmr_ALARM_AUTO, timeSync) 
